@@ -1,0 +1,140 @@
+h1 {
+  font-family: Arial;
+  background-color: #ffdef1;
+  max-width: 760px;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Entirety of Main */
+main {
+  font-family: Arial;
+  margin: auto;
+  max-width: 600px;
+  padding: 100px;
+  background-color: #ffedba;
+}
+/* Entire Bio */
+.entireBio {
+  margin-bottom: 75px;
+}
+
+/* Navigation Bar */
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e6bad8;
+  padding: 10px 20px;
+  font-family: Arial;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks li a {
+  color: black;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.navLinks li a:hover {
+  background-color: #cc9bbc;
+  border-radius: 4px;
+}
+
+/* Cowboy Carousel */
+.cowboyPhotoText {
+  text-align: center;
+}
+
+.cowboyNPhotos {
+  position: relative;
+  width: 450px;
+  height: 600px;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.cowboyPhoto {
+  width: 100%;
+  height: auto;
+  display: none;
+  object-fit: cover;
+}
+
+.cowboyPhoto.active {
+  display: block;
+}
+
+button.cowboyCarouselBack,
+button.cowboyCarouselForward {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 18;
+}
+
+button.cowboyCarouselBack {
+  left: 10px;
+}
+button.cowboyCarouselForward {
+  right: 10px;
+}
+
+/* Fun Fact Popups */
+.funFactButton {
+  position: relative;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #e6bad8;
+  padding: 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  border-color: #cc9bbc;
+}
+
+.funFactButton:hover {
+  background-color: #cc9bbc;
+}
+
+.funFact {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.funFactContent {
+  background: white;
+  margin: 15% auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.closeButton {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
