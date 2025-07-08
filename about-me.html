@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="about-me-style.css">
+  <head>
+    <nav class="navBar">
+      <ul class="navLinks">
+        <li><a href="index.html">Main</a></li>
+        <li><a href="my-story.html">My Story</a></li>
+        <li><a href="About-me.html">About Me</a></li>
+      </ul>
+    </nav>
+    <h1 class="aboutMe">About Me</h1>
+  </head>
+  <main>
+    <div class="entireBio">
+    <h2 class="bio">Bio</h2>
+      <p>
+        Hello! My name's Katherine, I am a rising sophmore at the University of
+        Michigan. I am double majoring in mathematics and economcis. My hobbies
+        include: walking, trying desserts, and playing video games. Some of my
+        current favorite games are: Stardew Valley, Sims 4, and Peak.
+      </p>
+      <p>
+        I was born in Hong Kong, but I have lived in New York for the entirety of
+        my life. I have a 2 year old dog named Cowboy!
+      </p>
+    </div>
+    <h2 class="cowboyPhotoText">Photos of Cowboy</h2>
+    <div class="cowboyNPhotos">
+      <button class="cowboyCarouselBack" onclick="prevSlide()"><</button>
+      <div class"cowboyCarouselTrack>
+        <img
+        src="IMG_0785.jpeg"
+        class="cowboyPhoto"
+        alt="Cowboy a the park eating ice cream"
+      />
+      <img
+        src="IMG_0836.jpeg"
+        class="cowboyPhoto"
+        alt="Cowboy in the hallway jumping up"
+      />
+      <img
+        src="IMG_0896.jpeg"
+        class="cowboyPhoto"
+        alt="Cowboy sitting with a bib on after getting groomed"
+      />
+      </div>
+      <button class="cowboyCarouselForward" onclick="nextSlide()">></button>
+    </div>
+    <div class="entiretyOfFunFacts">
+      <h2 class="funFactsTitle">Fun Facts</h2>
+      <button class="funFactButton" onclick="openFunFact('funFact1')">Fun Fact #1</button>
+      <button class="funFactButton" onclick="openFunFact('funFact2')">Fun Fact #2</button>
+      <button class="funFactButton" onclick="openFunFact('funFact3')">Fun Fact #3</button>
+    </div>
+    <div id="funFact1" class="funFact">
+        <div class="funFactContent">
+            <span class="closeButton" onclick="closeFunFact('funFact1')">&times;</span>
+            <h3>Fun Fact 1</h3>
+            <p>My favorite color is pink!
+                </p>
+        </div>
+    </div>
+    <div id="funFact2" class="funFact">
+        <div class="funFactContent">
+            <span class="closeButton" onclick="closeFunFact('funFact2')">&times;</span>
+            <h3>Fun Fact 2</h3>
+            <p>My dog is a poodle pomeranian mix!
+                </p>
+        </div>
+    </div>
+    <div id="funFact3" class="funFact">
+        <div class="funFactContent">
+            <span class="closeButton" onclick="closeFunFact('funFact3')">&times;</span>
+            <h3>Fun Fact 3</h3>
+            <p>I was top 10 in the world for an extremely obscure mobile rpg game! (Don't ask me the name I forgot.)
+                </p>
+        </div>
+    </div>
+    
+  </main>
+  
+  <script src="scriptForAbout-me.js"></script> 
+</html>

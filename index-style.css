@@ -1,0 +1,69 @@
+h1 {
+  font-family: Arial;
+  padding: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Navigation Bar */
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e6bad8;
+  padding: 10px 20px;
+  font-family: Arial;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks li a {
+  color: black;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.navLinks li a:hover {
+  background-color: #cc9bbc;
+  border-radius: 4px;
+}
+
+.mainBody {
+  font-family: Arial;
+  background-color: #ffedba;
+}
+
+/* Photo of Me */
+.myPhoto {
+  display: block;
+  margin: auto;
+}
+
+/* Additional Links */
+.additionalInfo {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  gap: 15px; /* spacing between buttons */
+  background-color: #ffe7a3;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border-color: #ffedba;
+  margin: auto;
+  text-align: center;
+  width: 500px;
+}
+
+.additionalInfo:hover {
+  background-color: #fcda77;
+}
+
+.additionalInfo button {
+  text-decoration: none;
+}
